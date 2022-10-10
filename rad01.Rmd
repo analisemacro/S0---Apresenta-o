@@ -1,0 +1,311 @@
+---
+title: "Por que usar uma linguagem de programação para analisar dados?"
+subtitle: "Programação em R para Análise de Dados"
+author: 'Fernando da Silva<br><span style = "font-size: 70%;">Data Scientist<br><a href="https://github.com/schoulten">`r fontawesome::fa("github", fill = "#282f6b")`</a>&nbsp; <a href="https://www.linkedin.com/in/schoulten/">`r fontawesome::fa("linkedin", fill = "#282f6b")`</a>&nbsp; <a href="mailto:fernando@fortietwo.com">`r fontawesome::fa("envelope", fill = "#282f6b")`</a>&nbsp; <a href="https://analisemacro.com.br/">`r fontawesome::fa("home", fill = "#282f6b")`</a></span>'
+date: "<span style = 'font-size: 70%;'>`r format(Sys.Date(), '%d de %B de %Y')`</span>"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      navigation: 
+        scroll: false
+params:
+  logo_slides: "https://analisemacro.com.br/wp-content/uploads/dlm_uploads/2021/10/logo_am.png"
+---
+
+```{r, file = "./rmd/setup.R", include=FALSE}
+```
+
+
+```{css, echo=FALSE}
+pre {
+  white-space: pre-wrap;
+  overflow-y: scroll !important;
+  max-height: 45vh !important;
+  overflow-x: auto;
+  max-width: 100%;
+}
+.tiny55 .remark-code {
+  font-size: 55%; !important;
+}
+.scrollable-slide {
+  height: 400px;
+  overflow-y: auto !important;
+}
+```
+
+
+
+
+### Boas vindas!
+
+Seja bem-vindo(a) ao curso de Programação em R para Análise de Dados. Esta é a **aula inicial do curso**, onde iremos:
+
+- Entender as vantagens de usar uma linguagem como o R;
+- Alinhar as expectativas;
+- Instruir sobre as aulas, materiais, suporte ao aluno, etc.
+
+Em resumo, passaremos informações importantes para o bom aproveitamento do curso.
+
+
+---
+### O ciclo da análise de dados
+
+```{r, out.width = "70%", fig.alt="Updated from Grolemund & Wickham's classis R4DS schematic, envisioned by Dr. Julia Lowndes for her 2019 useR! keynote talk and illustrated by Allison Horst.", fig.cap="Updated from Grolemund & Wickham's classis R4DS schematic, envisioned by <br>Dr. Julia Lowndes for her 2019 useR! keynote talk and illustrated by Allison Horst."}
+knitr::include_graphics("imgs/data_analysis.png")
+```
+
+
+---
+class: middle, inverse center
+# O que usar para implementar este ciclo?
+
+
+---
+### Algumas opções de softwares existentes
+
+.pull-left[
+
+```{r, out.width="35%"}
+knitr::include_graphics("imgs/excel.png")
+```
+
+```{r, out.width="30%"}
+knitr::include_graphics("imgs/eviews.jpg")
+```
+
+<br>
+
+```{r, out.width="35%"}
+knitr::include_graphics("imgs/sas.svg")
+```
+
+]
+
+.pull-right[
+
+```{r, out.width="50%"}
+knitr::include_graphics("imgs/matlab.png")
+```
+
+```{r, out.width="40%"}
+knitr::include_graphics("imgs/stata.svg")
+```
+
+```{r, out.width="50%"}
+knitr::include_graphics("imgs/powerbi.png")
+```
+
+```{r, out.width="50%"}
+knitr::include_graphics("imgs/tableau.png")
+```
+
+]
+
+
+---
+### Por outro lado, uma linguagem de programação...
+
+.pull-left[
+
+- Geralmente é *open-source*, portanto **gratuita**;<br><br>
+- Você pode usar **no seu computador** ou na **nuvem**;<br><br>
+- Tem uma **comunidade engajada** criando novas soluções;<br><br>
+- Possui **milhares de pacotes** e ferramentas úteis;<br><br>
+- Pode ser **generalizada**, tornando **projetos escaláveis**.
+
+]
+
+
+---
+### Por outro lado, uma linguagem de programação...
+
+.pull-left[
+
+- Geralmente é *open-source*, portanto **gratuita**;<br><br>
+- Você pode usar **no seu computador** ou na **nuvem**;<br><br>
+- Tem uma **comunidade engajada** criando novas soluções;<br><br>
+- Possui **milhares de pacotes** e ferramentas úteis;<br><br>
+- Pode ser **generalizada**, tornando **projetos escaláveis**.
+
+]
+
+.pull-right[
+
+**Exemplos**:
+
+<img src="imgs/python.svg" width="150"/>
+
+]
+
+
+---
+### Por outro lado, uma linguagem de programação...
+
+.pull-left[
+
+- Geralmente é *open-source*, portanto **gratuita**;<br><br>
+- Você pode usar **no seu computador** ou na **nuvem**;<br><br>
+- Tem uma **comunidade engajada** criando novas soluções;<br><br>
+- Possui **milhares de pacotes** e ferramentas úteis;<br><br>
+- Pode ser **generalizada**, tornando **projetos escaláveis**.
+
+]
+
+.pull-right[
+
+**Exemplos**:
+
+<img src="imgs/python.svg" width="150"/> &nbsp; &nbsp; <img src="imgs/julia.svg" width="230"/>
+
+]
+
+
+---
+### Por outro lado, uma linguagem de programação...
+
+.pull-left[
+
+- Geralmente é *open-source*, portanto **gratuita**;<br><br>
+- Você pode usar **no seu computador** ou na **nuvem**;<br><br>
+- Tem uma **comunidade engajada** criando novas soluções;<br><br>
+- Possui **milhares de pacotes** e ferramentas úteis;<br><br>
+- Pode ser **generalizada**, tornando **projetos escaláveis**.
+
+]
+
+.pull-right[
+
+**Exemplos**:
+
+<img src="imgs/python.svg" width="150"/> &nbsp; &nbsp; <img src="imgs/julia.svg" width="230"/>
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="imgs/r.png" width="250"/>
+
+]
+
+
+---
+### As vantagens do R
+
+- **Automatização** de rotinas e scripts;<br><br>
+- Dezenas de **pacotes para extração de dados** públicos e privados, nacionais e internacionais;<br><br>
+- Fácil integração com **bancos de dados** (SQL);<br><br>
+- Sintaxe *user friendly* do **`tidyverse`** para tratar dados;<br><br>
+- **Análise exploratória** de maneira fácil e rápida;<br><br>
+- **Pipe (%>%)**;<br><br>
+- Ótimos pacotes para **visualização de dados**;<br><br>
+- *Frameworks* modernos para **séries temporais** (`tidyverts`);<br><br>
+- `R Markdown` para **comunicar resultados** (relatórios, dashboards, etc.).
+
+
+---
+### Material de aula
+
+Os materiais de aula, arquivos, códigos, etc., serão disponibilizados no site da Análise Macro para acesso do aluno. Para não ficar perdido sobre esses materiais, vamos organizar assim:
+
+- Material é disponibilizado no formato zipado para download (por exemplo: *rad01.zip*);
+- Baixe e descompacte o arquivo da aula para utilização (use um programa como, por exemplo, o [7-Zip](https://www.7-zip.org/download.html));
+- Os arquivos descompactados seguirão (na medida do possível) a estrutura abaixo.
+
+```{r, echo=FALSE, comment=""}
+fs::dir_tree(
+  all = FALSE, 
+  regex = "libs|xaringan-themer.css|rad01.Rmd|papers|rad01.Rproj|rmd|data_analysis.png|eviews.jpg|excel.png|julia.svg|matlab.png|powerbi.png|python.svg|sas.svg|stata.svg|tableau.png", 
+  invert = TRUE
+  )
+```
+
+Onde o arquivo HTML é a apresentação de slides (se houver) da aula e o arquivo `.R` armazena os códigos da aula (se houver). Dentro das pastas `dados` e `imgs` colocaremos (quando necessário) arquivos de dados e imagens utilizadas na aula. Demais arquivos presentes (aqui omitidos) são apenas arquivos auxiliares dos slides ou necessários para a aula em questão.
+
+
+---
+### Suporte ao aluno
+
+Ao longo do curso surgirão várias dúvidas e/ou dificuldades que devem ser encaradas como benéficas ao seu aprendizado. Se você não tiver dúvidas sobre nada, pode ser um sinal de que não está aprendendo!
+
+.pull-left[
+
+Para suavizar esse processo de aprendizagem, vale se atentar aos seguintes pontos:
+
+- O material e referências citadas na aula são as fontes primárias para tirar dúvidas;
+- Cultive o habito de ler as documentações de pacotes/funções, serão nossas companheiras nesse curso;
+- Se ficar alguma dúvida, envie uma mensagem no chat;
+- Ao enviar sua dúvida, use o manual (a seguir) de boas práticas para nos ajudar a te ajudar!
+
+]
+
+.pull-right[
+
+```{r, echo=FALSE, out.width = "50%"}
+knitr::include_graphics("imgs/chat.png")
+```
+
+]
+
+
+---
+### Como enviar dúvidas
+
+Preparamos esse simples guia para você se orientar quando tiver uma dúvida para enviar pra gente. Por favor leia com atenção e retorne sempre que precisar!
+
+.pull-left[
+
+1. Defina sua dúvida: é uma dúvida sobre código? sobre a aula? sobre um cálculo?
+2. Gaste alguns segundos procurando se a resposta já não está na aula;
+3. Se a dúvida não for sobre código, relate o máximo de informações possíveis e o nome da aula correspondente no chat;
+4. Se a dúvida for sobre código, use o modelo ao lado preenchendo as informações que você tiver a disposição.
+
+]
+
+.pull-right[
+
+.scrollable-slide[
+
+**Problema**
+
+*Descreva aqui sucintamente o problema/erro que você está encontrando (seja específico se você achar necessário). Adicione imagens se precisar. Por exemplo: "tentei instalar o pacote XYZ mas apareceu essa mensagem de erro: 'coloque a mensagem de erro aqui'"*
+
+
+**Comportamento esperado**
+
+*Descreva aqui o comportamento/resultado que você estava esperando. Por exemplo: "eu esperava que fosse gerado um gráfico de linha com os eixos Y e X como valor e datas, respectivamente."*
+
+
+**Código de reprodução**
+
+*Informe aqui a aula e o arquivo em que o código está apresentando erro ou forneça o código (trecho) diretamente. Procure informar as linhas nas quais o erro acontece dentro do arquivo de script em questão. Assim podemos resolver o problema mais rapidamente.*
+
+
+**Informações da sessão**
+
+*Copie e execute os comandos abaixo, após você encontrar o erro, e cole a saída dos comandos. Isso nos ajuda a entender se o problema pode estar associado a configurações diferentes das versões dos pacotes/bibliotecas usados em aula versus as que você estiver usando.*
+
+```{r, eval=FALSE}
+if (!require("sessioninfo")) {install.packages("sessioninfo")}
+sessioninfo::session_info()
+```
+
+
+]
+
+]
+
+
+---
+### Convenções
+
+Ao longo do curso adotaremos algumas convenções, principalmente sobre código, na tentativa de seguir o que se chama de "boas práticas". Isso é totalmente opcional, você tem liberdade de escrever seus códigos da maneira como quiser (e, porventura, nós também em algum momento), mas aqui deixamos claro a abordagem do curso.
+
+- Escreveremos o código (nome de variáveis, colunas, etc.) em português, quando possível;
+- Usaremos o estilo *snake_case*;
+- Usaremos o [Tidyverse Style Guide](https://style.tidyverse.org/).
+
+Por fim, usaremos uma IDE propícia para o aprendizado (RStudio), mas sinta-se livre para usar a interface de sua preferência.
+
+Se nada disso faz sentido pra você, não se preocupe! Ao longo do curso passaremos por esses pontos e você pode voltar aqui sempre que precisar.
