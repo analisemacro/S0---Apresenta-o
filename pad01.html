@@ -31,7 +31,7 @@ class: center, middle, inverse, title-slide
 # Por que usar uma linguagem de programação para analisar dados?
 ]
 .subtitle[
-## Programação em R para Análise de Dados
+## Programação em Python para Análise de Dados
 ]
 .author[
 ### Fernando da Silva<br><span style="font-size: 70%;">Data Scientist<br><a href="https://github.com/schoulten"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="rfa" style="height:0.75em;fill:#282f6b;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>  <a href="https://www.linkedin.com/in/schoulten/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="rfa" style="height:0.75em;fill:#282f6b;position:relative;"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>  <a href="mailto:fernando@fortietwo.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="rfa" style="height:0.75em;fill:#282f6b;position:relative;"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg></a>  <a href="https://analisemacro.com.br/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="rfa" style="height:0.75em;fill:#282f6b;position:relative;"><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg></a></span>
@@ -68,9 +68,9 @@ pre {
 
 ### Boas vindas!
 
-Seja bem-vindo(a) ao curso de Programação em R para Análise de Dados. Esta é a **aula inicial do curso**, onde iremos:
+Seja bem-vindo(a) ao curso de Programação em Python para Análise de Dados. Esta é a **aula inicial do curso**, onde iremos:
 
-- Entender as vantagens de usar uma linguagem como o R;
+- Entender as vantagens de usar uma linguagem como o Python;
 - Alinhar as expectativas;
 - Instruir sobre as aulas, materiais, suporte ao aluno, etc.
 
@@ -127,7 +127,7 @@ class: middle, inverse center
 - Geralmente é *open-source*, portanto **gratuita**;&lt;br&gt;&lt;br&gt;
 - Você pode usar **no seu computador** ou na **nuvem**;&lt;br&gt;&lt;br&gt;
 - Tem uma **comunidade engajada** criando novas soluções;&lt;br&gt;&lt;br&gt;
-- Possui **milhares de pacotes** e ferramentas úteis;&lt;br&gt;&lt;br&gt;
+- Possui **milhares de bibliotecas** e ferramentas úteis;&lt;br&gt;&lt;br&gt;
 - Pode ser **generalizada**, tornando **projetos escaláveis**.
 
 ]
@@ -141,7 +141,7 @@ class: middle, inverse center
 - Geralmente é *open-source*, portanto **gratuita**;&lt;br&gt;&lt;br&gt;
 - Você pode usar **no seu computador** ou na **nuvem**;&lt;br&gt;&lt;br&gt;
 - Tem uma **comunidade engajada** criando novas soluções;&lt;br&gt;&lt;br&gt;
-- Possui **milhares de pacotes** e ferramentas úteis;&lt;br&gt;&lt;br&gt;
+- Possui **milhares de bibliotecas** e ferramentas úteis;&lt;br&gt;&lt;br&gt;
 - Pode ser **generalizada**, tornando **projetos escaláveis**.
 
 ]
@@ -150,7 +150,7 @@ class: middle, inverse center
 
 **Exemplos**:
 
-&lt;img src="imgs/python.svg" width="150"/&gt;
+&lt;img src="imgs/r.png" width="195"/&gt;
 
 ]
 
@@ -163,7 +163,7 @@ class: middle, inverse center
 - Geralmente é *open-source*, portanto **gratuita**;&lt;br&gt;&lt;br&gt;
 - Você pode usar **no seu computador** ou na **nuvem**;&lt;br&gt;&lt;br&gt;
 - Tem uma **comunidade engajada** criando novas soluções;&lt;br&gt;&lt;br&gt;
-- Possui **milhares de pacotes** e ferramentas úteis;&lt;br&gt;&lt;br&gt;
+- Possui **milhares de bibliotecas** e ferramentas úteis;&lt;br&gt;&lt;br&gt;
 - Pode ser **generalizada**, tornando **projetos escaláveis**.
 
 ]
@@ -172,7 +172,7 @@ class: middle, inverse center
 
 **Exemplos**:
 
-&lt;img src="imgs/python.svg" width="150"/&gt; &amp;nbsp; &amp;nbsp; &lt;img src="imgs/julia.svg" width="230"/&gt;
+&lt;img src="imgs/r.png" width="195"/&gt; &amp;nbsp; &amp;nbsp; &lt;img src="imgs/julia.svg" width="230"/&gt;
 
 ]
 
@@ -185,7 +185,7 @@ class: middle, inverse center
 - Geralmente é *open-source*, portanto **gratuita**;&lt;br&gt;&lt;br&gt;
 - Você pode usar **no seu computador** ou na **nuvem**;&lt;br&gt;&lt;br&gt;
 - Tem uma **comunidade engajada** criando novas soluções;&lt;br&gt;&lt;br&gt;
-- Possui **milhares de pacotes** e ferramentas úteis;&lt;br&gt;&lt;br&gt;
+- Possui **milhares de bibliotecas** e ferramentas úteis;&lt;br&gt;&lt;br&gt;
 - Pode ser **generalizada**, tornando **projetos escaláveis**.
 
 ]
@@ -194,25 +194,23 @@ class: middle, inverse center
 
 **Exemplos**:
 
-&lt;img src="imgs/python.svg" width="150"/&gt; &amp;nbsp; &amp;nbsp; &lt;img src="imgs/julia.svg" width="230"/&gt;
+&lt;img src="imgs/r.png" width="195"/&gt; &amp;nbsp; &amp;nbsp; &lt;img src="imgs/julia.svg" width="230"/&gt;
 
-&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;img src="imgs/r.png" width="250"/&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;img src="imgs/python.svg" width="250"/&gt;
 
 ]
 
 
 ---
-### As vantagens do R
+### As vantagens do Python
 
 - **Automatização** de rotinas e scripts;&lt;br&gt;&lt;br&gt;
-- Dezenas de **pacotes para extração de dados** públicos e privados, nacionais e internacionais;&lt;br&gt;&lt;br&gt;
-- Fácil integração com **bancos de dados** (SQL);&lt;br&gt;&lt;br&gt;
-- Sintaxe *user friendly* do **`tidyverse`** para tratar dados;&lt;br&gt;&lt;br&gt;
+- Dezenas de **biliotecas para extração de dados** públicos e privados, nacionais e internacionais;&lt;br&gt;&lt;br&gt;
+- **Integração** com outras linguagens/sistemas;&lt;br&gt;&lt;br&gt;
+- Bibliotecas para **tratar dados**;&lt;br&gt;&lt;br&gt;
 - **Análise exploratória** de maneira fácil e rápida;&lt;br&gt;&lt;br&gt;
-- **Pipe (%&gt;%)**;&lt;br&gt;&lt;br&gt;
-- Ótimos pacotes para **visualização de dados**;&lt;br&gt;&lt;br&gt;
-- *Frameworks* modernos para **séries temporais** (`tidyverts`);&lt;br&gt;&lt;br&gt;
-- `R Markdown` para **comunicar resultados** (relatórios, dashboards, etc.).
+- *Frameworks* modernos para **modelagem e previsão**;&lt;br&gt;&lt;br&gt;
+- `Plotly`/`Quarto` para **comunicar resultados** (gráficos, dashboards, etc.).
 
 
 ---
@@ -220,7 +218,7 @@ class: middle, inverse center
 
 Os materiais de aula, arquivos, códigos, etc., serão disponibilizados no site da Análise Macro para acesso do aluno. Para não ficar perdido sobre esses materiais, vamos organizar assim:
 
-- Material é disponibilizado no formato zipado para download (por exemplo: *rad01.zip*);
+- Material é disponibilizado no formato zipado para download (por exemplo: *pad01.zip*);
 - Baixe e descompacte o arquivo da aula para utilização (use um programa como, por exemplo, o [7-Zip](https://www.7-zip.org/download.html));
 - Os arquivos descompactados seguirão (na medida do possível) a estrutura abaixo.
 
@@ -231,13 +229,14 @@ Os materiais de aula, arquivos, códigos, etc., serão disponibilizados no site 
 │   └── dados.csv
 ├── imgs
 │   ├── chat.PNG
-│   └── r.png
-├── R
-│   └── rad01.R
-└── rad01.html
+│   └── python.svg
+├── pad01.html
+└── Python
+    ├── pad01.ipynb
+    └── pad01.py
 ```
 
-Onde o arquivo HTML é a apresentação de slides (se houver) da aula e o arquivo `.R` armazena os códigos da aula (se houver). Dentro das pastas `dados` e `imgs` colocaremos (quando necessário) arquivos de dados e imagens utilizadas na aula. Demais arquivos presentes (aqui omitidos) são apenas arquivos auxiliares dos slides ou necessários para a aula em questão.
+Onde o arquivo HTML é a apresentação de slides (se houver) da aula e os arquivos `.py` e `.ipynb` armazenam os códigos da aula (se houver). Dentro das pastas `dados` e `imgs` colocaremos (quando necessário) arquivos de dados e imagens utilizadas na aula. Demais arquivos presentes (aqui omitidos) são apenas arquivos auxiliares dos slides ou necessários para a aula em questão.
 
 
 ---
@@ -283,7 +282,7 @@ Preparamos esse simples guia para você se orientar quando tiver uma dúvida par
 
 **Problema**
 
-*Descreva aqui sucintamente o problema/erro que você está encontrando (seja específico se você achar necessário). Adicione imagens se precisar. Por exemplo: "tentei instalar o pacote XYZ mas apareceu essa mensagem de erro: 'coloque a mensagem de erro aqui'"*
+*Descreva aqui sucintamente o problema/erro que você está encontrando (seja específico se você achar necessário). Adicione imagens se precisar. Por exemplo: "tentei instalar a biblioteca XYZ mas apareceu essa mensagem de erro: 'coloque a mensagem de erro aqui'"*
 
 
 **Comportamento esperado**
@@ -301,7 +300,15 @@ Preparamos esse simples guia para você se orientar quando tiver uma dúvida par
 *Copie e execute os comandos abaixo, após você encontrar o erro, e cole a saída dos comandos. Isso nos ajuda a entender se o problema pode estar associado a configurações diferentes das versões dos pacotes/bibliotecas usados em aula versus as que você estiver usando.*
 
 
+```python
+try:
+  import session_info
+except ModuleNotFoundError:
+  pip install session_info
 
+import session_info
+session_info.show()
+```
 
 ]
 
@@ -315,9 +322,9 @@ Ao longo do curso adotaremos algumas convenções, principalmente sobre código,
 
 - Escreveremos o código (nome de variáveis, colunas, etc.) em português, quando possível;
 - Usaremos o estilo *snake_case*;
-- Usaremos o [Tidyverse Style Guide](https://style.tidyverse.org/).
+- Usaremos o [PEP 8](https://pep8.org/).
 
-Por fim, usaremos uma IDE propícia para o aprendizado (RStudio), mas sinta-se livre para usar a interface de sua preferência.
+Por fim, usaremos IDEs propícias para o aprendizado (Jupyter Notebook/Spyder/VSCode), mas sinta-se livre para usar a interface de sua preferência.
 
 Se nada disso faz sentido pra você, não se preocupe! Ao longo do curso passaremos por esses pontos e você pode voltar aqui sempre que precisar.
     </textarea>

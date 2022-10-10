@@ -1,6 +1,6 @@
 ---
 title: "Por que usar uma linguagem de programação para analisar dados?"
-subtitle: "Programação em R para Análise de Dados"
+subtitle: "Programação em Python para Análise de Dados"
 author: 'Fernando da Silva<br><span style = "font-size: 70%;">Data Scientist<br><a href="https://github.com/schoulten">`r fontawesome::fa("github", fill = "#282f6b")`</a>&nbsp; <a href="https://www.linkedin.com/in/schoulten/">`r fontawesome::fa("linkedin", fill = "#282f6b")`</a>&nbsp; <a href="mailto:fernando@fortietwo.com">`r fontawesome::fa("envelope", fill = "#282f6b")`</a>&nbsp; <a href="https://analisemacro.com.br/">`r fontawesome::fa("home", fill = "#282f6b")`</a></span>'
 date: "<span style = 'font-size: 70%;'>`r format(Sys.Date(), '%d de %B de %Y')`</span>"
 output:
@@ -44,9 +44,9 @@ pre {
 
 ### Boas vindas!
 
-Seja bem-vindo(a) ao curso de Programação em R para Análise de Dados. Esta é a **aula inicial do curso**, onde iremos:
+Seja bem-vindo(a) ao curso de Programação em Python para Análise de Dados. Esta é a **aula inicial do curso**, onde iremos:
 
-- Entender as vantagens de usar uma linguagem como o R;
+- Entender as vantagens de usar uma linguagem como o Python;
 - Alinhar as expectativas;
 - Instruir sobre as aulas, materiais, suporte ao aluno, etc.
 
@@ -116,7 +116,7 @@ knitr::include_graphics("imgs/tableau.png")
 - Geralmente é *open-source*, portanto **gratuita**;<br><br>
 - Você pode usar **no seu computador** ou na **nuvem**;<br><br>
 - Tem uma **comunidade engajada** criando novas soluções;<br><br>
-- Possui **milhares de pacotes** e ferramentas úteis;<br><br>
+- Possui **milhares de bibliotecas** e ferramentas úteis;<br><br>
 - Pode ser **generalizada**, tornando **projetos escaláveis**.
 
 ]
@@ -130,7 +130,7 @@ knitr::include_graphics("imgs/tableau.png")
 - Geralmente é *open-source*, portanto **gratuita**;<br><br>
 - Você pode usar **no seu computador** ou na **nuvem**;<br><br>
 - Tem uma **comunidade engajada** criando novas soluções;<br><br>
-- Possui **milhares de pacotes** e ferramentas úteis;<br><br>
+- Possui **milhares de bibliotecas** e ferramentas úteis;<br><br>
 - Pode ser **generalizada**, tornando **projetos escaláveis**.
 
 ]
@@ -139,7 +139,7 @@ knitr::include_graphics("imgs/tableau.png")
 
 **Exemplos**:
 
-<img src="imgs/python.svg" width="150"/>
+<img src="imgs/r.png" width="195"/>
 
 ]
 
@@ -152,7 +152,7 @@ knitr::include_graphics("imgs/tableau.png")
 - Geralmente é *open-source*, portanto **gratuita**;<br><br>
 - Você pode usar **no seu computador** ou na **nuvem**;<br><br>
 - Tem uma **comunidade engajada** criando novas soluções;<br><br>
-- Possui **milhares de pacotes** e ferramentas úteis;<br><br>
+- Possui **milhares de bibliotecas** e ferramentas úteis;<br><br>
 - Pode ser **generalizada**, tornando **projetos escaláveis**.
 
 ]
@@ -161,7 +161,7 @@ knitr::include_graphics("imgs/tableau.png")
 
 **Exemplos**:
 
-<img src="imgs/python.svg" width="150"/> &nbsp; &nbsp; <img src="imgs/julia.svg" width="230"/>
+<img src="imgs/r.png" width="195"/> &nbsp; &nbsp; <img src="imgs/julia.svg" width="230"/>
 
 ]
 
@@ -174,7 +174,7 @@ knitr::include_graphics("imgs/tableau.png")
 - Geralmente é *open-source*, portanto **gratuita**;<br><br>
 - Você pode usar **no seu computador** ou na **nuvem**;<br><br>
 - Tem uma **comunidade engajada** criando novas soluções;<br><br>
-- Possui **milhares de pacotes** e ferramentas úteis;<br><br>
+- Possui **milhares de bibliotecas** e ferramentas úteis;<br><br>
 - Pode ser **generalizada**, tornando **projetos escaláveis**.
 
 ]
@@ -183,25 +183,23 @@ knitr::include_graphics("imgs/tableau.png")
 
 **Exemplos**:
 
-<img src="imgs/python.svg" width="150"/> &nbsp; &nbsp; <img src="imgs/julia.svg" width="230"/>
+<img src="imgs/r.png" width="195"/> &nbsp; &nbsp; <img src="imgs/julia.svg" width="230"/>
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="imgs/r.png" width="250"/>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="imgs/python.svg" width="250"/>
 
 ]
 
 
 ---
-### As vantagens do R
+### As vantagens do Python
 
 - **Automatização** de rotinas e scripts;<br><br>
-- Dezenas de **pacotes para extração de dados** públicos e privados, nacionais e internacionais;<br><br>
-- Fácil integração com **bancos de dados** (SQL);<br><br>
-- Sintaxe *user friendly* do **`tidyverse`** para tratar dados;<br><br>
+- Dezenas de **biliotecas para extração de dados** públicos e privados, nacionais e internacionais;<br><br>
+- **Integração** com outras linguagens/sistemas;<br><br>
+- Bibliotecas para **tratar dados**;<br><br>
 - **Análise exploratória** de maneira fácil e rápida;<br><br>
-- **Pipe (%>%)**;<br><br>
-- Ótimos pacotes para **visualização de dados**;<br><br>
-- *Frameworks* modernos para **séries temporais** (`tidyverts`);<br><br>
-- `R Markdown` para **comunicar resultados** (relatórios, dashboards, etc.).
+- *Frameworks* modernos para **modelagem e previsão**;<br><br>
+- `Plotly`/`Quarto` para **comunicar resultados** (gráficos, dashboards, etc.).
 
 
 ---
@@ -209,19 +207,19 @@ knitr::include_graphics("imgs/tableau.png")
 
 Os materiais de aula, arquivos, códigos, etc., serão disponibilizados no site da Análise Macro para acesso do aluno. Para não ficar perdido sobre esses materiais, vamos organizar assim:
 
-- Material é disponibilizado no formato zipado para download (por exemplo: *rad01.zip*);
+- Material é disponibilizado no formato zipado para download (por exemplo: *pad01.zip*);
 - Baixe e descompacte o arquivo da aula para utilização (use um programa como, por exemplo, o [7-Zip](https://www.7-zip.org/download.html));
 - Os arquivos descompactados seguirão (na medida do possível) a estrutura abaixo.
 
 ```{r, echo=FALSE, comment=""}
 fs::dir_tree(
   all = FALSE, 
-  regex = "libs|xaringan-themer.css|rad01.Rmd|papers|rad01.Rproj|rmd|data_analysis.png|eviews.jpg|excel.png|julia.svg|matlab.png|powerbi.png|python.svg|sas.svg|stata.svg|tableau.png", 
+  regex = "libs|xaringan-themer.css|pad01.Rmd|papers|pad01.Rproj|rmd|data_analysis.png|eviews.jpg|excel.png|julia.svg|matlab.png|powerbi.png|r.png|sas.svg|stata.svg|tableau.png", 
   invert = TRUE
   )
 ```
 
-Onde o arquivo HTML é a apresentação de slides (se houver) da aula e o arquivo `.R` armazena os códigos da aula (se houver). Dentro das pastas `dados` e `imgs` colocaremos (quando necessário) arquivos de dados e imagens utilizadas na aula. Demais arquivos presentes (aqui omitidos) são apenas arquivos auxiliares dos slides ou necessários para a aula em questão.
+Onde o arquivo HTML é a apresentação de slides (se houver) da aula e os arquivos `.py` e `.ipynb` armazenam os códigos da aula (se houver). Dentro das pastas `dados` e `imgs` colocaremos (quando necessário) arquivos de dados e imagens utilizadas na aula. Demais arquivos presentes (aqui omitidos) são apenas arquivos auxiliares dos slides ou necessários para a aula em questão.
 
 
 ---
@@ -269,7 +267,7 @@ Preparamos esse simples guia para você se orientar quando tiver uma dúvida par
 
 **Problema**
 
-*Descreva aqui sucintamente o problema/erro que você está encontrando (seja específico se você achar necessário). Adicione imagens se precisar. Por exemplo: "tentei instalar o pacote XYZ mas apareceu essa mensagem de erro: 'coloque a mensagem de erro aqui'"*
+*Descreva aqui sucintamente o problema/erro que você está encontrando (seja específico se você achar necessário). Adicione imagens se precisar. Por exemplo: "tentei instalar a biblioteca XYZ mas apareceu essa mensagem de erro: 'coloque a mensagem de erro aqui'"*
 
 
 **Comportamento esperado**
@@ -286,11 +284,15 @@ Preparamos esse simples guia para você se orientar quando tiver uma dúvida par
 
 *Copie e execute os comandos abaixo, após você encontrar o erro, e cole a saída dos comandos. Isso nos ajuda a entender se o problema pode estar associado a configurações diferentes das versões dos pacotes/bibliotecas usados em aula versus as que você estiver usando.*
 
-```{r, eval=FALSE}
-if (!require("sessioninfo")) {install.packages("sessioninfo")}
-sessioninfo::session_info()
-```
+```{python, eval=FALSE, echo=TRUE}
+try:
+  import session_info
+except ModuleNotFoundError:
+  pip install session_info
 
+import session_info
+session_info.show()
+```
 
 ]
 
@@ -304,8 +306,8 @@ Ao longo do curso adotaremos algumas convenções, principalmente sobre código,
 
 - Escreveremos o código (nome de variáveis, colunas, etc.) em português, quando possível;
 - Usaremos o estilo *snake_case*;
-- Usaremos o [Tidyverse Style Guide](https://style.tidyverse.org/).
+- Usaremos o [PEP 8](https://pep8.org/).
 
-Por fim, usaremos uma IDE propícia para o aprendizado (RStudio), mas sinta-se livre para usar a interface de sua preferência.
+Por fim, usaremos IDEs propícias para o aprendizado (Jupyter Notebook/Spyder/VSCode), mas sinta-se livre para usar a interface de sua preferência.
 
 Se nada disso faz sentido pra você, não se preocupe! Ao longo do curso passaremos por esses pontos e você pode voltar aqui sempre que precisar.
