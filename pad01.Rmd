@@ -2,7 +2,7 @@
 title: "Por que usar uma linguagem de programação para analisar dados?"
 subtitle: "Programação em Python para Análise de Dados"
 author: 'Fernando da Silva<br><span style = "font-size: 70%;">Data Scientist<br><a href="https://github.com/schoulten">`r fontawesome::fa("github", fill = "#282f6b")`</a>&nbsp; <a href="https://www.linkedin.com/in/schoulten/">`r fontawesome::fa("linkedin", fill = "#282f6b")`</a>&nbsp; <a href="mailto:fernando@fortietwo.com">`r fontawesome::fa("envelope", fill = "#282f6b")`</a>&nbsp; <a href="https://analisemacro.com.br/">`r fontawesome::fa("home", fill = "#282f6b")`</a></span>'
-date: "<span style = 'font-size: 70%;'>`r format(Sys.Date(), '%d de %B de %Y')`</span>"
+#date: "<span style = 'font-size: 70%;'>`r format(Sys.Date(), '%d de %B de %Y')`</span>"
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
