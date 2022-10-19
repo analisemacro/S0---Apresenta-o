@@ -1,7 +1,7 @@
 ---
-title: "Por que usar uma linguagem de programação para analisar dados?"
-subtitle: "Programação em Python para Análise de Dados"
-author: 'Fernando da Silva<br><span style = "font-size: 70%;">Data Scientist<br><a href="https://github.com/schoulten">`r fontawesome::fa("github", fill = "#282f6b")`</a>&nbsp; <a href="https://www.linkedin.com/in/schoulten/">`r fontawesome::fa("linkedin", fill = "#282f6b")`</a>&nbsp; <a href="mailto:fernando@fortietwo.com">`r fontawesome::fa("envelope", fill = "#282f6b")`</a>&nbsp; <a href="https://analisemacro.com.br/">`r fontawesome::fa("home", fill = "#282f6b")`</a></span>'
+title: "Curso de Python para Investimentos"
+subtitle: "Instruções Iniciais"
+author: 'Vítor Wilher<br><span style = "font-size: 70%;">Cientista-Chefe da Análise Macro<br><a href="https://github.com/analisemacro">`r fontawesome::fa("github", fill = "#282f6b")`</a>&nbsp; <a href="https://www.linkedin.com/in/vitorwilher/">`r fontawesome::fa("linkedin", fill = "#282f6b")`</a>&nbsp; <a href="mailto:vitorwilher@analisemacro.com.br">`r fontawesome::fa("envelope", fill = "#282f6b")`</a>&nbsp; <a href="https://analisemacro.com.br/">`r fontawesome::fa("home", fill = "#282f6b")`</a></span>'
 #date: "<span style = 'font-size: 70%;'>`r format(Sys.Date(), '%d de %B de %Y')`</span>"
 output:
   xaringan::moon_reader:
@@ -19,6 +19,18 @@ params:
 ---
 
 ```{r, file = "./rmd/setup.R", include=FALSE}
+```
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning   = FALSE,  # exibir avisos do console?
+  message   = FALSE,  # exibir mensagens do console?
+  dpi       = 300,    # resolução
+  fig.align = "center"# alinhamento de imagens
+  )
 ```
 
 
@@ -44,7 +56,7 @@ pre {
 
 ### Boas vindas!
 
-Seja bem-vindo(a) ao curso de Programação em Python para Análise de Dados. Esta é a **aula inicial do curso**, onde iremos:
+Seja bem-vindo(a) ao curso de *Python para Investimentos*. Esta é a **aula inicial do curso**, onde iremos:
 
 - Entender as vantagens de usar uma linguagem como o Python;
 - Alinhar as expectativas;
@@ -207,19 +219,10 @@ knitr::include_graphics("imgs/tableau.png")
 
 Os materiais de aula, arquivos, códigos, etc., serão disponibilizados no site da Análise Macro para acesso do aluno. Para não ficar perdido sobre esses materiais, vamos organizar assim:
 
-- Material é disponibilizado no formato zipado para download (por exemplo: *pad01.zip*);
+- Material é disponibilizado no formato zipado para download (por exemplo: *pi01.zip*);
 - Baixe e descompacte o arquivo da aula para utilização (use um programa como, por exemplo, o [7-Zip](https://www.7-zip.org/download.html));
-- Os arquivos descompactados seguirão (na medida do possível) a estrutura abaixo.
+- Cada aula será composta por um `notebook` e arquivos auxiliares. Materias complementares também podem ser disponibilizados ao longo do Curso.
 
-```{r, echo=FALSE, comment=""}
-fs::dir_tree(
-  all = FALSE, 
-  regex = "libs|xaringan-themer.css|pad01.Rmd|papers|pad01.Rproj|rmd|data_analysis.png|eviews.jpg|excel.png|julia.svg|matlab.png|powerbi.png|r.png|sas.svg|stata.svg|tableau.png", 
-  invert = TRUE
-  )
-```
-
-Onde o arquivo HTML é a apresentação de slides (se houver) da aula e os arquivos `.py` e `.ipynb` armazenam os códigos da aula (se houver). Dentro das pastas `dados` e `imgs` colocaremos (quando necessário) arquivos de dados e imagens utilizadas na aula. Demais arquivos presentes (aqui omitidos) são apenas arquivos auxiliares dos slides ou necessários para a aula em questão.
 
 
 ---
@@ -302,12 +305,63 @@ session_info.show()
 ---
 ### Convenções
 
-Ao longo do curso adotaremos algumas convenções, principalmente sobre código, na tentativa de seguir o que se chama de "boas práticas". Isso é totalmente opcional, você tem liberdade de escrever seus códigos da maneira como quiser (e, porventura, nós também em algum momento), mas aqui deixamos claro a abordagem do curso.
+Ao longo do curso, adotaremos algumas convenções, principalmente sobre código, na tentativa de seguir o que se chama de "boas práticas". Isso é totalmente opcional, você tem liberdade de escrever seus códigos da maneira como quiser (e, porventura, nós também em algum momento), mas aqui deixamos claro a abordagem do curso.
 
 - Escreveremos o código (nome de variáveis, colunas, etc.) em português, quando possível;
 - Usaremos o estilo *snake_case*;
 - Usaremos o [PEP 8](https://pep8.org/).
 
-Por fim, usaremos IDEs propícias para o aprendizado (Jupyter Notebook/Spyder/VSCode), mas sinta-se livre para usar a interface de sua preferência.
+Por fim, usaremos o `Google Colab` para escrever os códigos dos Cursos. Mas sinta-se à vontade para utilizar outras IDEs (Jupyter Notebook/Spyder/VSCode). O uso do `Google Colab` é mais indicado para quem está começando, posto que não é necessário instalar nenhum outro programa adicional. 
+
+**Se você já tem experiência anterior com Python, entretanto, pode seguir o Curso com a sua IDE de preferência**.
 
 Se nada disso faz sentido pra você, não se preocupe! Ao longo do curso passaremos por esses pontos e você pode voltar aqui sempre que precisar.
+
+---
+### Objetivo do Curso
+
+O objetivo do Curso `Python para Investimentos` é introduzir a linguagem python para participantes do mercado financeiro. O curso parte do zero na linguagem, apresentando as principais bibliotecas voltadas para análise de dados, bem como mostrando diversos exemplos do mundo dos investimentos sendo resolvidos com python.
+
+---
+### Programa Completo
+
+O Curso de **Python para Investimentos** está dividido em duas grandes partes. Na primeira, nós iremos nos preocupar com uma introdução à linguagem python, passando por diversos conceitos importantes que podem ser resolvidos por ela. O programa completo dessa primeira parte está disponível a seguir. 
+
+---
+### Programa Completo
+
+1. Preparando o ambiente: tudo o que você precisa para começar no python
+2. Estruturas de Dados: vetores, listas, matrizes e dataframes
+3. Importação de Dados: APIS, planilhas Excel, pdfs e arquivos proprietários
+4. Visualização de Dados com seaborn e matplotlib
+5. Ambientes Controlado: criando funções, if-else, while loop, for loop, break e continue
+6. Análise Exploratória de Dados Macroeconômicos: transformações de séries temporais, defasagens, diferenciação, médias móveis, deflacionamento de séries, curvas de phillips, curvas de juros e convergência de renda
+7. Análise Exploratória de Microdados: exemplos com datasus, censos e auxílio emergencial
+8. Modelos: regressão linear, ARIMA, Dados em Painel e Scikit Learn
+9. Comunicando Resultados
+
+
+---
+### Programa Completo
+
+Na sequência, uma vez que o aluno tenha aprendido o básico da linguagem, poderemos construir juntos diversas aplicações e exercícios interessantes do mundo das finanças a partir de projetos de Curso. O programa completa dessa segunda parte está disponível a seguir. 
+
+---
+### Programa Completo
+
+10. Projeto de Curso: Gráficos para Análises e Operações no Python
+11. Projeto de Curso: Python e Finanças: relação de risco e retorno
+12. Projeto de Curso: DataReader e Análises com Yahoo! Finance
+13. Projeto de Curso: Regressões Lineares no Python
+14. Projeto de Curso: Estimando o Beta de Mercado no Python
+15. Projeto de Curso: Seleção de Fatores via Machine Learning
+16. Projeto de Curso: Construindo o juro real e o juro neutro em Python
+17. Projeto de Curso: Estrutura a Termo da Taxa de Juros em Python
+18. Projeto de Curso: Construindo uma carteira de investimentos em Python
+19. Projeto de Curso: Criando medidas de volatilidade no Python
+20. Projeto de Curso: Cointegração e Pair Trading no Python
+21. Projeto de Curso: Análise de Portfólio com pyfolio
+22. Projeto de Curso: Filtro de Kalman e Beta de Mercado
+23. Projeto de Curso: Médias Móveis Simples para Trading com o Python
+24. Projeto de Curso: Criando indicadores fundamentalistas com Python
+25. Projeto de Curso: Integração com a plataforma MetaTrader
